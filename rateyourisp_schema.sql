@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Dec 07, 2019 at 01:10 PM
+-- Generation Time: Dec 12, 2019 at 01:02 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.5
 
@@ -36,14 +36,7 @@ CREATE TABLE IF NOT EXISTS `tbl_email_subscribers` (
   `col_email` varchar(25) NOT NULL,
   `comments` varchar(125) NOT NULL DEFAULT 'no_comments_added',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `tbl_email_subscribers`
---
-
-INSERT INTO `tbl_email_subscribers` (`id`, `col_email`, `comments`) VALUES
-(1, 'maprincegee@gmail.com', 'no_comments_added');
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -93,16 +86,7 @@ CREATE TABLE IF NOT EXISTS `tbl_ratings` (
   KEY `reliability_id` (`col_reliability`) USING BTREE,
   KEY `support_id` (`col_support`),
   KEY `region_id` (`col_region`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `tbl_ratings`
---
-
-INSERT INTO `tbl_ratings` (`id`, `col_telco`, `col_region`, `col_area`, `col_reliability`, `col_pricing`, `col_support`, `comments`) VALUES
-(7, 100, 7, 'Alajo', 3, 9, 14, 'no_comments_added'),
-(8, 100, 7, 'Alajo', 3, 9, 14, 'no_comments_added'),
-(9, 200, 1, 'Bono', 1, 9, 13, 'no_comments_added');
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
