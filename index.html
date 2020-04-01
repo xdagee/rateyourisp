@@ -235,37 +235,38 @@
 					subscribe to our email newsletter.</p>
 				<div class="split style1">
 					<section>
-						<form role="form" id="emailForm">
+						<form id="mc-form" novalidate="true">
 							<div class="row gtr-uniform">
 								<div class="col-8 col-12-xsmall">
 									<label for="email">Your email address</label>
-									<input type="text" name="email" id="email" required="email" />
+									<input type="email" name="EMAIL" id="email" required="" />
 								</div>
 							</div>
 							<p></p>
 							<ul class="actions">
 								<li><input type="submit" value="Subscribe" id="subscribe" class="primary"></li>
 							</ul>
-						</form </section> <section>
-						<ul class="contact">
-							<li>
-								<h3>Email</h3>
-								<a href="#">info@saveourdata.tk</a>
-							</li>
+						</form>
+						<section>
+							<ul class="contact">
+								<li>
+									<h3>Email</h3>
+									<a href="#">info@saveourdata.tk</a>
+								</li>
 
-							<li>
-								<h3>We are Social</h3>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-facebook-f"><span
-												class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-twitter"><span
-												class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span
-												class="label">Instagram</span></a></li>
-								</ul>
-							</li>
-						</ul>
-					</section>
+								<li>
+									<h3>We are Social</h3>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-facebook-f"><span
+													class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-twitter"><span
+													class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span
+													class="label">Instagram</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</section>
 				</div>
 			</div>
 		</section>
@@ -290,46 +291,11 @@
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/sweetalert2.all.min.js"></script>
+	<script src="assets/js/jquery.ajaxchimp.min.js"></script>
 	<script src="assets/js/polyfill.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/process_ratings.js"></script>
-	<script src="assets/js/process_emails.js"></script>
-
-
-	<!-- <script>
-		$(document).ready(function () {
-			var radios = document.getElementsByName('reliability');
-			for (var i = 0; i < radios.length; i++) {
-				if (radios[i].checked) {
-					alert(radios[i].value);
-					break;
-				}
-
-			}
-		})
-	</script> -->
-
-	<!-- <script>
-		$(document).ready(function getReliabilityVal(form, name) {
-			var val ;
-
-			//
-			var radios = form.elements[name];
-
-			//
-			for (var i = 0, len = radios.length; i<len; i++) {
-				if (radios[i].checked) {
-					val = radios[i].value;
-					break;
-				}
-
-			}
-
-			//
-			return val;
-		});
-	</script> -->
 
 </body>
 
